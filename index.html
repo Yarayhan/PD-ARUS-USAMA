@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PD. Arus Usama - Solusi Material Kayu</title>
+    
+    <link rel="icon" type="image/png" href="assets/images/Desain_tanpa_judul__4_-removebg-preview.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
+        
+        section { 
+            min-height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            padding-top: 100px; 
+            padding-bottom: 60px;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/Desain\ tanpa\ judul\ \(2\).png');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .logo-shadow { filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.3)); }
+        #mainNav { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px) scale(0.95);
+            transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+            will-change: transform, opacity;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .product-card {
+            transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .product-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <nav id="mainNav" class="flex justify-between items-center px-6 md:px-12 py-5 fixed w-full z-50 text-white">
+        <div class="flex items-center">
+            <img src="assets/images/Desain_tanpa_judul__4_-removebg-preview.png" 
+                 alt="Logo PD Arus Usama" 
+                 class="h-20 w-auto object-contain logo-shadow -my-4 -ml-2 transition-all duration-500" id="navLogo">
+            <span class="font-bold text-xl md:text-2xl tracking-tight uppercase leading-none">PD. ARUS USAMA</span>
+        </div>
+
+        <div class="hidden md:flex gap-8 items-center font-semibold">
+            <a href="#" class="hover:text-red-500 transition">Beranda</a>
+            <a href="#keunggulan" class="hover:text-red-500 transition">Layanan Kami</a>
+            <a href="#produk" class="hover:text-red-500 transition">Produk</a>
+            <a href="https://wa.me/6287879457323" 
+               target="_blank"
+               class="bg-red-600 px-6 py-2 rounded-full flex items-center gap-2 hover:bg-red-700 shadow-lg transition transform hover:scale-105">
+                <i class="fas fa-phone-alt text-sm"></i> Mulai Pemesanan
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero-bg flex items-center px-6 md:px-24">
+        <div class="max-w-2xl text-white pt-20 animate__animated animate__fadeInLeft">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-md">Solusi Terbaik Material Kayu Bangunan</h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90 italic font-light">"Kami menyediakan berbagai jenis material kayu berkualitas dengan pengiriman cepat ke seluruh wilayah Jakarta."</p>
+            <a href="#produk" class="inline-flex items-center bg-red-600 px-8 py-4 rounded-md font-bold text-lg gap-2 hover:bg-red-700 transition shadow-xl transform hover:scale-105 active:scale-95">
+                Lihat Produk <i class="fas fa-chevron-right text-xs"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="keunggulan" class="px-6 md:px-24">
+        <div class="grid md:grid-cols-2 gap-16 items-center w-full">
+            <div class="reveal">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900 leading-tight">Keunggulan Layanan Kami</h2>
+                <p class="text-gray-500 text-lg leading-relaxed">Kami hadir sebagai mitra terpercaya untuk kebutuhan kayu bangunan Anda dengan standar kualitas tertinggi.</p>
+            </div>
+            
+            <div class="space-y-10 border-l-2 border-red-100 ml-4">
+                <div class="relative pl-10 reveal" style="transition-delay: 0.1s;">
+                    <div class="absolute -left-6 top-0 bg-red-100 text-red-600 p-3 rounded-full shadow-md">
+                        <i class="fas fa-tree w-6 h-6 flex items-center justify-center"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Kualitas Kayu Pilihan</h3>
+                    <p class="text-gray-500 text-sm">Material kayu kami telah melalui proses seleksi ketat untuk memastikan kekuatan dan daya tahan maksimal.</p>
+                </div>
+
+                <div class="relative pl-10 reveal" style="transition-delay: 0.2s;">
+                    <div class="absolute -left-6 top-0 bg-red-100 text-red-600 p-3 rounded-full shadow-md">
+                        <i class="fas fa-dollar-sign w-6 h-6 flex items-center justify-center"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Harga Transparan</h3>
+                    <p class="text-gray-500 text-sm">Harga kompetitif dengan sistem Franco Tempat tanpa biaya tersembunyi untuk efisiensi budget proyek Anda.</p>
+                </div>
+
+                <div class="relative pl-10 reveal" style="transition-delay: 0.3s;">
+                    <div class="absolute -left-6 top-0 bg-red-100 text-red-600 p-3 rounded-full shadow-md">
+                        <i class="fas fa-truck w-6 h-6 flex items-center justify-center"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Distribusi Cepat</h3>
+                    <p class="text-gray-500 text-sm">Armada kami siap mengantar pesanan Anda tepat waktu guna menjaga kelancaran jadwal konstruksi.</p>
+                </div>
+
+                <div class="relative pl-10 reveal" style="transition-delay: 0.4s;">
+                    <div class="absolute -left-6 top-0 bg-red-100 text-red-600 p-3 rounded-full shadow-md">
+                        <i class="fas fa-comments w-6 h-6 flex items-center justify-center"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Konsultasi Gratis</h3>
+                    <p class="text-gray-500 text-sm">Bingung memilih jenis kayu? Tim ahli kami siap memberikan rekomendasi material yang paling sesuai.</p>
+                </div>
+
+                <div class="relative pl-10 reveal" style="transition-delay: 0.5s;">
+                    <div class="absolute -left-6 top-0 bg-red-100 text-red-600 p-3 rounded-full shadow-md">
+                        <i class="fas fa-box w-6 h-6 flex items-center justify-center"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Stok Selalu Siaga</h3>
+                    <p class="text-gray-500 text-sm">Kami mengelola gudang sendiri dengan stok melimpah untuk menjamin ketersediaan material kapan saja.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section id="produk" class="bg-slate-50 px-6 py-24">
+    <div class="max-w-7xl mx-auto w-full">
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <h2 class="text-sm font-bold text-red-600 tracking-[0.2em] uppercase mb-4">Katalog Material</h2>
+            <h3 class="text-4xl font-extrabold text-slate-900 mb-6">Produk Kami</h3>
+            <div class="h-1.5 w-20 bg-red-600 mx-auto rounded-full mb-6"></div>
+            <p class="text-slate-500 italic text-sm">
+                <i class="fas fa-info-circle mr-2"></i> 
+                Catatan: Pengiriman untuk pemesanan di bawah 3 m³ berlaku biaya tambahan logistik.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <script>
+                const waNum = "6287879457323";
+                const listProduk = [
+                    // BORNEO
+                    { n: "Kaso Borneo 4x6", p: "1.450.000", u: "4 x 6 x 400 cm" },
+                    { n: "Kaso Borneo 5x7", p: "1.450.000", u: "5 x 7 x 400 cm" },
+                    { n: "Balok Borneo 5x10", p: "1.800.000", u: "5 x 10 x 400 cm" },
+                    { n: "Balok Borneo 6x12", p: "1.800.000", u: "6 x 12 x 400 cm" },
+                    { n: "Balok Borneo 8x12", p: "1.800.000", u: "8 x 12 x 400 cm" },
+                    { n: "Papan Borneo 2x20", p: "2.000.000", u: "2 x 20 x 400 cm" },
+                    { n: "Papan Borneo 3x20", p: "2.000.000", u: "3 x 20 x 400 cm" },
+                    
+                    // BORNEO SUMATRA
+                    { n: "Kaso Borneo Sumatra 4x6", p: "2.100.000", u: "4 x 6 x 400 cm" },
+                    { n: "Kaso Borneo Sumatra 5x7", p: "2.100.000", u: "5 x 7 x 400 cm" },
+                    { n: "Balok Borneo Sumatra 5x10", p: "2.350.000", u: "5 x 10 x 400 cm" },
+                    { n: "Balok Borneo Sumatra 6x12", p: "2.350.000", u: "6 x 12 x 400 cm" },
+                    { n: "Balok Borneo Sumatra 8x12", p: "2.350.000", u: "8 x 12 x 400 cm" },
+                    { n: "Papan Borneo Sumatra 2x20", p: "2.700.000", u: "2 x 20 x 400 cm" },
+                    { n: "Papan Borneo Sumatra 3x20", p: "2.700.000", u: "3 x 20 x 400 cm" },
+                    
+                    // MERANTI CAMPUR (MC)
+                    { n: "Kaso Meranti (MC) 4x6", p: "2.450.000", u: "4 x 6 x 400 cm" },
+                    { n: "Kaso Meranti (MC) 5x7", p: "2.450.000", u: "5 x 7 x 400 cm" },
+                    { n: "Balok Meranti (MC) 5x10", p: "2.800.000", u: "5 x 10 x 400 cm" },
+                    { n: "Balok Meranti (MC) 6x12", p: "2.800.000", u: "6 x 12 x 400 cm" },
+                    { n: "Balok Meranti (MC) 8x12", p: "2.800.000", u: "8 x 12 x 400 cm" },
+                    { n: "Papan Meranti (MC) 2x20", p: "3.100.000", u: "2 x 20 x 400 cm" },
+                    { n: "Papan Meranti (MC) 3x30", p: "3.100.000", u: "3 x 30 x 400 cm" },
+                    
+                    // TRIPLEK
+                    { n: "Triplek 8 mm", p: "98.000", u: "Per Lembar" },
+                    { n: "Triplek 9 mm", p: "108.000", u: "Per Lembar" },
+                    { n: "Triplek 12 mm", p: "133.000", u: "Per Lembar" }
+                ];
+                
+                listProduk.forEach((item, i) => {
+                    const delay = (i % 3) * 0.1;
+                    document.write(`
+                    <div class="bg-white rounded-3xl overflow-hidden product-card reveal group shadow-sm border border-slate-100" style="transition-delay: ${delay}s;">
+                        <div class="relative overflow-hidden h-52">
+                          <img src="assets/images/Desain tanpa judul (2).png" 
+     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+     alt="${item.n}">
+                        </div>
+
+                        <div class="p-8">
+                            <h4 class="font-bold text-xl mb-2 text-slate-900 leading-tight h-14 overflow-hidden">${item.n}</h4>
+                            <p class="text-slate-400 text-xs mb-6 flex items-center gap-2">
+                                <i class="fas fa-ruler-combined text-red-600"></i> ${item.u}
+                            </p>
+                            
+                           <div class="flex items-center justify-between pt-6 border-t border-slate-50">
+            <div>
+                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">
+                    Harga Mulai / m³
+                </p>
+                <p class="text-xl font-extrabold text-slate-900">
+                    Rp ${item.p}
+                </p>
+                <p class="text-[10px] text-slate-400 italic">
+                    Harga per meter kubik (m³) berdasarkan spesifikasi ${item.u}
+                </p>
+            </div>
+                <a href="https://wa.me/${waNum}?text=Halo, saya ingin bertanya tentang produk: ${item.n}" 
+                 target="_blank"
+                 class="bg-red-600 text-white px-5 py-3 rounded-2xl flex items-center gap-2 font-bold hover:bg-red-700 transition-all shadow-md active:scale-95 text-sm">
+                <i class="fas fa-phone-alt text-xs"></i> Pesan
+            </a>
+            </div>
+
+                        </div>
+                    </div>
+                    `);
+                });
+            </script>
+        </div>
+    </div>
+</section>
+
+    <footer class="py-16 px-6 text-center bg-white border-t border-gray-100">
+        <div class="flex flex-col items-center mb-10">
+            <div class="flex items-center justify-center mb-2">
+                <img src="assets/images/Desain_tanpa_judul__4_-removebg-preview.png" 
+                     alt="Logo" 
+                     class="h-32 w-auto object-contain transition-all">
+            </div>
+            <span class="font-bold text-3xl text-red-600 tracking-tighter uppercase block mt-2">
+                PD. ARUS USAMA
+            </span>
+            <p class="max-w-md text-gray-500 italic mt-4">
+                "Distributor Kayu dan Bangunan Berkualitas - Jakarta Utara."
+            </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center gap-10 items-center mb-12">
+            <div class="flex items-center gap-3 transition-transform hover:scale-105">
+                <i class="fas fa-map-marker-alt text-red-600 text-xl"></i>
+                <span class="font-bold text-gray-700 uppercase">Jakarta Utara</span>
+            </div>
+            <a href="https://wa.me/6287879457323" target="_blank" class="flex items-center gap-3 group transition-transform hover:scale-105">
+                <i class="fab fa-whatsapp text-green-500 text-2xl"></i>
+                <span class="font-bold text-gray-700">0878-7945-7323</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 group transition-transform hover:scale-105">
+                <i class="fab fa-instagram text-pink-500 text-2xl"></i>
+                <span class="font-bold text-gray-700">@ARUS_USAMA</span>
+            </a>
+        </div>
+
+        <div class="text-xs text-gray-400 font-medium uppercase tracking-widest border-t border-gray-50 pt-8">
+            © 2025 PD. Arus Usama. Seluruh Hak Dilindungi.
+        </div>
+    </footer>
+
+    <script>
+        function reveal() {
+            const reveals = document.querySelectorAll(".reveal");
+            const windowHeight = window.innerHeight;
+            reveals.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add("active");
+                }
+            });
+        }
+
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            const logo = document.getElementById('navLogo');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-xl', 'text-gray-900', 'py-2');
+                nav.classList.remove('text-white', 'py-5');
+                logo.classList.replace('h-20', 'h-14');
+                logo.classList.remove('-my-4');
+            } else {
+                nav.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-xl', 'text-gray-900', 'py-2');
+                nav.classList.add('text-white', 'py-5');
+                logo.classList.replace('h-14', 'h-20');
+                logo.classList.add('-my-4');
+            }
+            reveal();
+        });
+
+        document.addEventListener("DOMContentLoaded", reveal);
+    </script>
+</body>
+</html>

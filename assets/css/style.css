@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Menggunakan font yang lebih modern dari Inter */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #ffffff;
+    color: #1e293b; /* Warna teks Slate yang lebih soft dibanding hitam pekat */
+}
+
+/* NAVBAR */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 24px 80px; /* Padding lebih lebar agar terlihat lega */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    font-size: 20px;
+}
+
+.logo-circle {
+    width: 42px;
+    height: 42px;
+    background: #e11d48; /* Merah aksen yang lebih modern (Rose-Red) */
+    border-radius: 12px; /* Border radius kotak melengkung lebih modern dari lingkaran */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.menu a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu a:hover {
+    color: #e11d48;
+}
+
+.menu button {
+    background: #e11d48;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 15px -3px rgba(225, 29, 72, 0.3);
+}
+
+.menu button:hover {
+    background: #be123c;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px -3px rgba(225, 29, 72, 0.4);
+}
+
+/* HERO */
+.hero {
+    height: 100vh; /* Full screen height agar lebih premium */
+    min-height: 700px;
+    /* Gradient gelap kebiruan agar teks putih mudah dibaca */
+    background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)),
+                url("../images/Desain tanpa judul (2).png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 64px; /* Ukuran lebih besar untuk impresi kuat */
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -2px;
+}
+
+/* Aksen warna pada teks tertentu jika ingin ditambahkan di HTML nanti */
+.hero-content h1 span {
+    color: #e11d48;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+}
+
+.hero-content button {
+    background: #ffffff; /* Tombol utama putih agar kontras dengan background gelap */
+    border: none;
+    color: #0f172a; /* Teks tombol gelap */
+    padding: 16px 36px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.hero-content button:hover {
+    background: #e11d48;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Penambahan Scroll Indicator (Opsional tapi bagus untuk Modern Look) */
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 50px;
+    background: linear-gradient(transparent, white);
+    opacity: 0.5;
+}
